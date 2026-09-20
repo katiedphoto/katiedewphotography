@@ -9,13 +9,4 @@ if (menuButton && navigation) {
 }
 document.querySelectorAll('[data-year]').forEach(item => item.textContent = new Date().getFullYear());
 
-const contactForm = document.querySelector('#contact-form');
-if (contactForm) {
-  contactForm.addEventListener('submit', event => {
-    event.preventDefault();
-    const data = new FormData(contactForm);
-    const subject = encodeURIComponent(`Photography enquiry from ${data.get('name')}`);
-    const body = encodeURIComponent(`Name: ${data.get('name')}\nEmail: ${data.get('email')}\n\n${data.get('message')}`);
-    window.location.href = `mailto:hello@example.com?subject=${subject}&body=${body}`;
-  });
-}
+
