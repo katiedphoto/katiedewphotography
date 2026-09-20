@@ -8,3 +8,4 @@
 /* Explicitly retain the light design when dark mode is enabled */@media (prefers-color-scheme: dark) {:root {color-scheme: only light;}
   html,body,main,section,footer,.site-header,.site-nav {background-color: #ffffff !important;color: #111111 !important;}input, textarea { background-color: #ffffff !important; color: #111111 !important; border-color: #aaaaaa !important;}a,h1,h2,h3 {color: #111111;}}
 .about-photo {display: block;width: 100%;height: auto;object-fit: cover;}
+.about-photo {display: block;width: 100%;height: auto;aspect-ratio: auto;object-fit: contain;}
