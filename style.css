@@ -5,5 +5,5 @@
   .home-hero {display: flex;flex-direction: column;min-height: 0;}
   .hero-copy {order: 1;}
   img.hero-image {order: 2;display: block;width: 100%;max-width: none;height: auto;min-height: 0;object-fit: contain;align-self: flex-start;}}
-/* Keep the website in light mode */:root {color-scheme: light only;}
-html,body {background-color: #ffffff;color: #111111;}
+/* Explicitly retain the light design when dark mode is enabled */@media (prefers-color-scheme: dark) {:root {color-scheme: only light;}
+  html,body,main,section,footer,.site-header,.site-nav {background-color: #ffffff !important;color: #111111 !important;}input, textarea { background-color: #ffffff !important; color: #111111 !important; border-color: #aaaaaa !important;}a,h1,h2,h3 {color: #111111;}}
